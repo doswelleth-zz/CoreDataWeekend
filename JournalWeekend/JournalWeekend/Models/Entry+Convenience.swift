@@ -13,7 +13,7 @@ extension Entry {
     
     // MARK: - Set the value of attributes you defined in the data model using the parameters of the initializer.
     
-    convenience init(title: String, bodyText: String, identifier: String = UUID().uuidString, timestamp: Date = Date(), context: NSManagedObjectContext) {
+    convenience init(title: String, bodyText: String, identifier: String = UUID().uuidString, timestamp: Date = Date(), context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
         
         self.init(context: context)
         self.title = title

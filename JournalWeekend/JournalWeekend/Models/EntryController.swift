@@ -35,7 +35,8 @@ class EntryController {
     func loadFromPersistentStore() -> [Entry] {
         let fetchRequest: NSFetchRequest<Entry> = Entry.fetchRequest()
         do {
-            let _ = try moc.fetch(fetchRequest)
+            let fetch = try moc.fetch(fetchRequest)
+            return fetch
         } catch {
             NSLog("Error fetching entries: \(error)")
         }
@@ -44,18 +45,13 @@ class EntryController {
     
     // MARK: - CRUD
     
-    func create(entry: Entry, title: String, bodyText: String, identifier: String, timestamp: Date) {
+    func create(title: String, bodyText: String) {
         
+        let entry = Entry(title: title, bodyText: bodyText)
         entry.title = title
         entry.bodyText = bodyText
-        entry.identifier = identifier
-        entry.timestamp = timestamp
         
-        do {
-            try moc.save()
-        } catch {
-            NSLog("Error saving entry: \(error)")
-        }
+        saveToPersistentStore()
     }
     
     func update(entry: Entry, title: String, bodyText: String) {
@@ -64,22 +60,13 @@ class EntryController {
         scratch.title = title
         scratch.bodyText = bodyText
         scratch.timestamp = Date()
-        
-        do {
-            try moc.save()
-        } catch {
-            NSLog("Error saving entry: \(error)")
-        }
+       
+        saveToPersistentStore()
     }
     
     func delete(entry: Entry) {
         moc.delete(entry)
-        
-        do {
-            try moc.save()
-        } catch {
-            NSLog("Error saving entry: \(error)")
-        }
+        saveToPersistentStore()
     }
     
 }

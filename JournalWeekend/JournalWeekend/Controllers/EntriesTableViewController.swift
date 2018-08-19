@@ -22,6 +22,8 @@ class EntriesTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
@@ -62,13 +64,13 @@ class EntriesTableViewController: UITableViewController {
  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let detailVC = EntryDetailViewController()
+        let detailVC = segue.destination as? EntryDetailViewController
         
         if segue.identifier == "showCreateEntry" {
-            detailVC.entryController = entryController
+            detailVC?.entryController = entryController
         } else {
-            if let index = tableView.indexPathForSelectedRow {
-                detailVC.entry = entryController.entries[index.row]
+            if let indexPath = tableView.indexPathForSelectedRow {
+             detailVC?.entry = entryController.entries[indexPath.row]
             }
         }
     }

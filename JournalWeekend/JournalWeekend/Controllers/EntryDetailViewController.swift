@@ -12,9 +12,13 @@ class EntryDetailViewController: UIViewController {
     
     // MARK: - Properties
     
-    var entry: Entry?
+    var entry: Entry? {
+        didSet {
+            updateViews()
+        }
+    }
     
-    var entryController: EntryController?
+    var entryController: EntryController!
     
     // MARK: - Outlets
     
@@ -24,10 +28,28 @@ class EntryDetailViewController: UIViewController {
     
     @IBAction func saveButton(_ sender: Any) {
         
+        guard let title = textField.text, !title.isEmpty, let body = textView.text else { return }
+        
+        if let entry = entry {
+            entryController.update(entry: entry, title: title, bodyText: body)
+        } else {
+            entryController.create(title: title, bodyText: body)
+        }
+        entryController.saveToPersistentStore()
+        navigationController?.popViewController(animated: true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        updateViews()
     }
+    
+    func updateViews() {
+        guard isViewLoaded else { return }
+        self.title = entry?.title ?? "Create Entry"
+        textField.text = entry?.title
+        textView.text = entry?.bodyText
+    }
+    
 }

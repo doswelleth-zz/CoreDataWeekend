@@ -20,8 +20,8 @@ class EntryTableViewCell: UITableViewCell {
     
     // MARK: - Outlets
 
-    @IBOutlet weak var title: UILabel!
-    
+    @IBOutlet weak var titleLabel: UILabel!
+
     @IBOutlet weak var bodyText: UILabel!
     
     @IBOutlet weak var timestamp: UILabel!
@@ -29,10 +29,16 @@ class EntryTableViewCell: UITableViewCell {
     // MARK: - Function that takes the values from the entry variable and places them in the outlets
     
     private func updateViews() {
+       guard let title = entry?.title, let body = entry?.bodyText, let timestamp = entry?.timestamp else { return }
         
-        title.text = entry?.title
-        bodyText.text = entry?.bodyText
-        timestamp.text = entry?.timestamp?.description
+        self.titleLabel.text = title
+        self.bodyText.text = body
+        self.timestamp.text = timestamp.description
+        
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.timeStyle = .short
+        formatter.date(from: timestamp.description)
     }
     
 }

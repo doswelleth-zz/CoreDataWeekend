@@ -98,8 +98,8 @@
 		056C0ED3212A0168002D25A9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				056C0ED8212A049A002D25A9 /* CoreDataStack.swift */,
 				056C0EDA212A0530002D25A9 /* JournalWeekend.xcdatamodeld */,
+				056C0ED8212A049A002D25A9 /* CoreDataStack.swift */,
 				056C0EDD212A05C4002D25A9 /* Entry+Convenience.swift */,
 				056C0EDF212A06E6002D25A9 /* EntryController.swift */,
 			);

@@ -73,7 +73,7 @@
                                 <connections>
                                     <outlet property="bodyText" destination="aup-G0-cFo" id="TRn-h0-cmc"/>
                                     <outlet property="timestamp" destination="Jz3-3f-J6e" id="Ltw-hO-Kdr"/>
-                                    <outlet property="title" destination="d5Y-zA-l6M" id="ONw-lh-ycT"/>
+                                    <outlet property="titleLabel" destination="d5Y-zA-l6M" id="Skv-4f-dFd"/>
                                     <segue destination="N5X-lG-2jM" kind="show" identifier="showEntry" id="1LU-IO-yl4"/>
                                 </connections>
                             </tableViewCell>
