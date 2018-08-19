@@ -10,6 +10,9 @@ import Foundation
 import CoreData
 
 extension Entry {
+    
+    // MARK: - Set the value of attributes you defined in the data model using the parameters of the initializer.
+    
     convenience init(title: String, bodyText: String, identifier: String = UUID().uuidString, timestamp: Date = Date(), context: NSManagedObjectContext) {
         
         self.init(context: context)

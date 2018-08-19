@@ -17,6 +17,7 @@
 		056C0ED9212A049A002D25A9 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056C0ED8212A049A002D25A9 /* CoreDataStack.swift */; };
 		056C0EDC212A0530002D25A9 /* JournalWeekend.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 056C0EDA212A0530002D25A9 /* JournalWeekend.xcdatamodeld */; };
 		056C0EDE212A05C4002D25A9 /* Entry+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056C0EDD212A05C4002D25A9 /* Entry+Convenience.swift */; };
+		056C0EE0212A06E6002D25A9 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056C0EDF212A06E6002D25A9 /* EntryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		056C0ED8212A049A002D25A9 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		056C0EDB212A0530002D25A9 /* JournalWeekend.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JournalWeekend.xcdatamodel; sourceTree = "<group>"; };
 		056C0EDD212A05C4002D25A9 /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
+		056C0EDF212A06E6002D25A9 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				056C0ED8212A049A002D25A9 /* CoreDataStack.swift */,
 				056C0EDA212A0530002D25A9 /* JournalWeekend.xcdatamodeld */,
 				056C0EDD212A05C4002D25A9 /* Entry+Convenience.swift */,
+				056C0EDF212A06E6002D25A9 /* EntryController.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				056C0EDC212A0530002D25A9 /* JournalWeekend.xcdatamodeld in Sources */,
 				056C0ED7212A0340002D25A9 /* EntryDetailViewController.swift in Sources */,
 				056C0EBE2128C2A7002D25A9 /* AppDelegate.swift in Sources */,
+				056C0EE0212A06E6002D25A9 /* EntryController.swift in Sources */,
 				056C0EDE212A05C4002D25A9 /* Entry+Convenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
