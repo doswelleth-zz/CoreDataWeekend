@@ -21,6 +21,7 @@ class EntryController {
         return loadFromPersistentStore()
     }
     
+    // MARK: - Save To and Load From Persistent Store
     func saveToPersistentStore() {
         
         do {
@@ -40,6 +41,8 @@ class EntryController {
         }
         return []
     }
+    
+    // MARK: - CRUD
     
     func create(entry: Entry, title: String, bodyText: String, identifier: String, timestamp: Date) {
         

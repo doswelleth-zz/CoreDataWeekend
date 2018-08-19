@@ -10,13 +10,21 @@ import UIKit
 
 class EntryDetailViewController: UIViewController {
     
+    // MARK: - Properties
+    
+    var entry: Entry?
+    
+    var entryController: EntryController?
+    
+    // MARK: - Outlets
+    
     @IBOutlet weak var textField: UITextField!
     
     @IBOutlet weak var textView: UITextView!
     
     @IBAction func saveButton(_ sender: Any) {
+        
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
