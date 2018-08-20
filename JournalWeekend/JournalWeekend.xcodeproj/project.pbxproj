@@ -34,6 +34,7 @@
 		056C0EDB212A0530002D25A9 /* JournalWeekend.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JournalWeekend.xcdatamodel; sourceTree = "<group>"; };
 		056C0EDD212A05C4002D25A9 /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
 		056C0EDF212A06E6002D25A9 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		056C0EE1212A679C002D25A9 /* JournalWeekend 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "JournalWeekend 2.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -387,9 +388,10 @@
 		056C0EDA212A0530002D25A9 /* JournalWeekend.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				056C0EE1212A679C002D25A9 /* JournalWeekend 2.xcdatamodel */,
 				056C0EDB212A0530002D25A9 /* JournalWeekend.xcdatamodel */,
 			);
-			currentVersion = 056C0EDB212A0530002D25A9 /* JournalWeekend.xcdatamodel */;
+			currentVersion = 056C0EE1212A679C002D25A9 /* JournalWeekend 2.xcdatamodel */;
 			path = JournalWeekend.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

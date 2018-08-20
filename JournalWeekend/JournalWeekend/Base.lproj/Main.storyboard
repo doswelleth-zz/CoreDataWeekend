@@ -104,13 +104,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a title:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I8H-gj-4x9">
-                                <rect key="frame" x="16" y="146" width="343" height="30"/>
+                                <rect key="frame" x="16" y="168" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1H7-tx-Q3q">
+                                <rect key="frame" x="16" y="132" width="343" height="29"/>
+                                <segments>
+                                    <segment title="😀"/>
+                                    <segment title="😐"/>
+                                    <segment title="☹️"/>
+                                </segments>
+                            </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="j8d-Ug-gSu">
-                                <rect key="frame" x="16" y="185" width="343" height="462"/>
+                                <rect key="frame" x="16" y="206" width="343" height="422"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -118,13 +126,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="j8d-Ug-gSu" firstAttribute="leading" secondItem="mMz-9I-LD6" secondAttribute="leading" constant="16" id="6Tk-zH-Vya"/>
-                            <constraint firstItem="mMz-9I-LD6" firstAttribute="trailing" secondItem="j8d-Ug-gSu" secondAttribute="trailing" constant="16" id="B9e-86-PMB"/>
-                            <constraint firstItem="mMz-9I-LD6" firstAttribute="trailing" secondItem="I8H-gj-4x9" secondAttribute="trailing" constant="16" id="KXp-CS-YwZ"/>
-                            <constraint firstItem="I8H-gj-4x9" firstAttribute="top" secondItem="mMz-9I-LD6" secondAttribute="top" constant="30" id="Nc0-v8-iCE"/>
-                            <constraint firstItem="j8d-Ug-gSu" firstAttribute="top" secondItem="I8H-gj-4x9" secondAttribute="bottom" constant="9" id="mW8-kM-FeS"/>
-                            <constraint firstItem="I8H-gj-4x9" firstAttribute="leading" secondItem="mMz-9I-LD6" secondAttribute="leading" constant="16" id="q6t-FU-Ht2"/>
-                            <constraint firstItem="mMz-9I-LD6" firstAttribute="bottom" secondItem="j8d-Ug-gSu" secondAttribute="bottom" constant="20" id="y56-Tg-1Wf"/>
+                            <constraint firstItem="mMz-9I-LD6" firstAttribute="trailing" secondItem="j8d-Ug-gSu" secondAttribute="trailing" constant="16" id="AFz-Uz-XCJ"/>
+                            <constraint firstItem="I8H-gj-4x9" firstAttribute="leading" secondItem="mMz-9I-LD6" secondAttribute="leading" constant="16" id="CjT-gA-YWg"/>
+                            <constraint firstItem="mMz-9I-LD6" firstAttribute="bottom" secondItem="j8d-Ug-gSu" secondAttribute="bottom" constant="39" id="PEq-8O-KOO"/>
+                            <constraint firstItem="mMz-9I-LD6" firstAttribute="trailing" secondItem="I8H-gj-4x9" secondAttribute="trailing" constant="16" id="TSI-2Z-xvx"/>
+                            <constraint firstItem="j8d-Ug-gSu" firstAttribute="top" secondItem="I8H-gj-4x9" secondAttribute="bottom" constant="8" id="Wil-Bi-HS9"/>
+                            <constraint firstItem="1H7-tx-Q3q" firstAttribute="leading" secondItem="mMz-9I-LD6" secondAttribute="leading" constant="16" id="YhU-lx-K07"/>
+                            <constraint firstItem="I8H-gj-4x9" firstAttribute="top" secondItem="1H7-tx-Q3q" secondAttribute="bottom" constant="8" id="eTs-TX-bEc"/>
+                            <constraint firstItem="1H7-tx-Q3q" firstAttribute="top" secondItem="mMz-9I-LD6" secondAttribute="top" constant="16" id="ixt-mn-VDL"/>
+                            <constraint firstItem="mMz-9I-LD6" firstAttribute="trailing" secondItem="1H7-tx-Q3q" secondAttribute="trailing" constant="16" id="ndL-9K-PD6"/>
+                            <constraint firstItem="j8d-Ug-gSu" firstAttribute="leading" secondItem="mMz-9I-LD6" secondAttribute="leading" constant="16" id="y2P-Lq-dBn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mMz-9I-LD6"/>
                     </view>
@@ -136,13 +147,14 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="segmentedControl" destination="1H7-tx-Q3q" id="ic2-HO-lPz"/>
                         <outlet property="textField" destination="I8H-gj-4x9" id="fM5-PK-hJI"/>
                         <outlet property="textView" destination="j8d-Ug-gSu" id="OXK-He-VWV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0G-74-KiQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1243.5" y="121.5"/>
+            <point key="canvasLocation" x="1242.4000000000001" y="120.98950524737631"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="78z-h9-f9b">
