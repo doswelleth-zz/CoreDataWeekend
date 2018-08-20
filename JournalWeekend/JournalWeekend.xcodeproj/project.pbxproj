@@ -18,6 +18,8 @@
 		056C0EDC212A0530002D25A9 /* JournalWeekend.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 056C0EDA212A0530002D25A9 /* JournalWeekend.xcdatamodeld */; };
 		056C0EDE212A05C4002D25A9 /* Entry+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056C0EDD212A05C4002D25A9 /* Entry+Convenience.swift */; };
 		056C0EE0212A06E6002D25A9 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056C0EDF212A06E6002D25A9 /* EntryController.swift */; };
+		056C0EE3212A7628002D25A9 /* EntryRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056C0EE2212A7628002D25A9 /* EntryRepresentation.swift */; };
+		056C0EE5212A76FE002D25A9 /* Entry+Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056C0EE4212A76FE002D25A9 /* Entry+Encodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		056C0EDD212A05C4002D25A9 /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
 		056C0EDF212A06E6002D25A9 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		056C0EE1212A679C002D25A9 /* JournalWeekend 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "JournalWeekend 2.xcdatamodel"; sourceTree = "<group>"; };
+		056C0EE2212A7628002D25A9 /* EntryRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRepresentation.swift; sourceTree = "<group>"; };
+		056C0EE4212A76FE002D25A9 /* Entry+Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Encodable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				056C0ED8212A049A002D25A9 /* CoreDataStack.swift */,
 				056C0EDD212A05C4002D25A9 /* Entry+Convenience.swift */,
 				056C0EDF212A06E6002D25A9 /* EntryController.swift */,
+				056C0EE2212A7628002D25A9 /* EntryRepresentation.swift */,
+				056C0EE4212A76FE002D25A9 /* Entry+Encodable.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -185,6 +191,8 @@
 				056C0ED7212A0340002D25A9 /* EntryDetailViewController.swift in Sources */,
 				056C0EBE2128C2A7002D25A9 /* AppDelegate.swift in Sources */,
 				056C0EE0212A06E6002D25A9 /* EntryController.swift in Sources */,
+				056C0EE3212A7628002D25A9 /* EntryRepresentation.swift in Sources */,
+				056C0EE5212A76FE002D25A9 /* Entry+Encodable.swift in Sources */,
 				056C0EDE212A05C4002D25A9 /* Entry+Convenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
