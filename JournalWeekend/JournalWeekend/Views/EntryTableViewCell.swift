@@ -29,16 +29,17 @@ class EntryTableViewCell: UITableViewCell {
     // MARK: - Function that takes the values from the entry variable and places them in the outlets
     
     private func updateViews() {
-       guard let title = entry?.title, let body = entry?.bodyText, let timestamp = entry?.timestamp else { return }
         
-        self.titleLabel.text = title
-        self.bodyText.text = body
-        self.timestamp.text = timestamp.description
+        guard let entry = entry else { return }
+
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short
+        dateFormatter.timeStyle = .short
         
-        let formatter = DateFormatter()
-        formatter.dateStyle = .short
-        formatter.timeStyle = .short
-        formatter.date(from: timestamp.description)
+        let date = dateFormatter.string(from: entry.timestamp!)
+
+        self.titleLabel.text = entry.title
+        self.bodyText.text = entry.bodyText
+        self.timestamp.text = date
     }
-    
 }
